@@ -2,7 +2,8 @@
 var playing = false;
 var score;
 var trialsLeft;
-var step, action;
+var step;
+var action;
 var fruits = ['apple', 'banana', 'cherries', 'grapes', 'mango', 'orange', 'peach', 'pear', 'watermelon'];
 
 
@@ -43,10 +44,11 @@ $(function () {
 
         //stop fruit
         clearInterval(action);
-        $("#fruit1").hide("explode",500); // make slice
+       $("#fruit1").hide("explode", 500); // make slice
         // new fruit
-        // setTimeout(startAction,500);
-        startAction();
+        //startAction()
+        setTimeout(startAction, 500);
+        //startAction();
     });
 
     // add heart 
@@ -59,13 +61,13 @@ $(function () {
 
     //show frouit 
     function startAction() {
-        console.log("Yes")
+      //  console.log("Yes")
         $("#fruit1").show();
         choseFruit(); // random fruit show
         var a = Math.round(550 * Math.random());
         $("#fruit1").css({ 'left': a, 'top': -50 });
 
-        step = Math.round(5 * Math.random()) + 1;
+        step = 1 + Math.round(5 * Math.random());
         action = setInterval(function () {
             $("#fruit1").css('top', $("#fruit1").position().top + step) //moving the fruit y axis
 
@@ -76,7 +78,7 @@ $(function () {
                     var a = Math.round(550 * Math.random());
                     $("#fruit1").css({ 'left': a, 'top': -50 });
 
-                    step = Math.round(5 * Math.random()) + 1;
+                    step =1+ Math.round(5 * Math.random());
                     trialsLeft--;
                     $("#lifeGoneSound")[0].play();
                     addHeart();
