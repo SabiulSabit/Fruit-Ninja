@@ -1,0 +1,137 @@
+html{
+  height: 100%;
+  background: radial-gradient(circle,#c5e3f6,#40514e);
+}
+#name{
+  margin: 50px auto 0px 555px;
+  padding: 0px;
+  font-size: 40px;
+  color: #0e153a;
+  position: relative;
+ 
+}
+#container{
+  height: 600px;
+  width: 750px;
+  background-color: #e3c4a8;
+  margin: 40px auto 50px 270px;;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 3px 0px #3e3636;
+  position: relative;
+}
+#score{
+  background-color: #fef4a9;
+  color: #085f63;
+  padding: 11px;
+  font-weight: bold;
+  position: absolute;
+  left: 700px;
+  box-shadow: 0px 4px 3px 0px #3e3636;
+}
+#correct{
+  position: absolute;
+  left: 260px;
+  background-color: #83e85a;
+  color: white;
+  padding: 11px;
+  display: none;
+}
+#wrong{
+  position: absolute;
+  left: 250px;
+  background-color: #e41749;
+  color: white;
+  padding: 11px;
+  display: none;
+}
+#question{
+  width: 650px;
+  height: 400px;
+  margin: 50px auto 10px auto;
+  background-color:white;
+  box-shadow: 0px 4px 3px 0px #3e3636;
+  font-size: 100px;
+  text-align: center;
+  font-family: cursive,sans-serif;
+}
+#instruction{
+  width: 450px;
+  height: 50px;
+  background-color: #40514e;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 45px;
+  color:white;
+  font-weight: 700;
+  box-shadow: 0px 4px 3px 0px #3e3636;
+}
+#choises{
+  width: 450px;
+  height: 100px;
+  margin: 5px auto;
+}
+
+.box{
+  width: 85px;
+  height: 85px;
+  background-color: #f5eded;
+  float: left;
+  margin-right: 36px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 600;
+  box-shadow: 0px 4px 3px 0px #3e3636;
+  text-align: center;
+  line-height: 80px;
+  position: relative;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+.box:hover, #startReset:hover{
+  background-color: #96f7d2;
+}
+.box:active,#startReset:active{
+  box-shadow: 0px 0px 0px 0px #3e3636;
+  top: 4px;
+}
+#box4{
+  margin-right: 0;
+}
+#startReset{
+  width: 78px;
+  padding: 10px;
+  background-color: #cabbe9;
+  margin: 20px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 3px 0px #3e3636;
+  text-align: center;
+  position: relative;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+#trialsLeft{
+   width: 80px;
+   padding: 10px;
+   position: absolute; 
+   background-color:#fff98c;
+   border-radius: 5px;
+   box-shadow: 0px 4px 3px 0px #3e3636;
+   display: none;
+}
+#gameOver{
+  height: 200px;
+  width: 500px;
+  background: linear-gradient(#303a52,#6e3b3b);
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 170px;
+  left: 145px;
+  z-index:2;
+  display: none;
+}
